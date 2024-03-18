@@ -1,9 +1,8 @@
 "use client";
 import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import React from "react";
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
   const session = useSession();
 

@@ -3,7 +3,7 @@ import React, { FormEvent } from "react";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
   const session = useSession();
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
